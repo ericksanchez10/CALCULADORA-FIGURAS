@@ -13,12 +13,20 @@
     <main>
       <h1>funcionalidad</h1>
       <p>en esta pagina podras obtener el area y perimetro de un rectangulo</p>
-      <h3>ingrese las medidas del rectangulo</h3> 
-      <input type="number" placeholder="base">
-      <input type="number" placeholder="altura">
-      <button>obtener resultado</button>
-      <p></p>
-      <p></p>
+      <h3>ingrese las medidas del rectangulo</h3>
+      <input type="number" placeholder="base" id="base" />
+      <!-- se usa el id para poder obtener los datos del archivo html en el javaScript
+      con la funcion getElementbyId -->
+      <input type="number" placeholder="altura" id="ancho" />
+      <!-- se usa el id para poder obtener los datos del archivo html en el javaScript
+      con la funcion getElementbyId -->
+      <button onclick="areaPerimeter()">obtener resultado</button>
+      <script src="/src/index.js"></script>
+      <!-- El onclick es para que se realize la funcion de calcular el perimtro y el area
+      cada vez que se le de click -->
+      <p id="result_area"></p>
+      <!-- El id es para poder enviar los datos desde el archivo javaScript hasta el html -->
+      <p id="result_perimeter"></p>
     </main>
     <footer>This is the footer</footer>
   </body>
